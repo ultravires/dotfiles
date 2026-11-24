@@ -6,6 +6,7 @@
 
 ```bash
 brew install stow
+brew install --cask font-maple-mono-nf-cn   # Ghostty 使用的字体
 ```
 
 ## 仓库结构
