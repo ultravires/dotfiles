@@ -14,6 +14,10 @@ brew install stow
 
 ```text
 .
+├── ghostty/                   # Ghostty 终端
+│   └── .config/
+│       └── ghostty/
+│           └── config         # ~/.config/ghostty/config
 └── starship/                  # starship 提示符
     └── .config/
         └── starship.toml      # ~/.config/starship.toml
@@ -26,7 +30,7 @@ brew install stow
 ```bash
 git clone https://github.com/ultravires/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-stow starship
+stow starship ghostty
 ```
 
 > 仓库固定克隆到 `~/dotfiles`。stow 的默认目标目录是仓库的上级目录（即 `~`），因此无需额外指定 `--target`。

@@ -1,0 +1,14 @@
+# 字体：Maple Mono NF CN
+# 中英文同一家族、同一字重文件，2:1 严格等宽，
+# 自带 Nerd Font 图标与中文字形，无需系统回退字体
+font-family = Maple Mono NF CN
+
+# 字号
+font-size = 16
+
+# 行间距：单元格高度增加 15%（宽松档）
+# 数值支持像素（如 2）或百分比（如 10%），负值为收紧
+adjust-cell-height = 15%
+
+# 字间距：单元格宽度增加 10%（字形自动水平居中）
+adjust-cell-width = 10%
