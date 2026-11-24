@@ -1,0 +1,58 @@
+# 根据 schema 提供自动补全
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# see: https://starship.rs/config/#environment-variable
+
+# 在提示符之间插入空行
+add_newline = true
+
+format = '''$all'''
+
+right_format = '''$battery'''
+
+# 替换提示符
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[❯](bold red)'
+
+# 当前用户
+[username]
+disabled = false
+show_always = true
+
+[battery]
+disabled = true
+full_symbol = '[  ](bold green)'
+charging_symbol = '[  ](bold green)'
+discharging_symbol = '[  ](bold yellow)'
+
+
+# 电池电量低于 10%
+[[battery.display]]
+threshold = 10
+style = 'bold red'
+
+# 电池电量低于 30%
+[[battery.display]]
+threshold = 30
+style = 'bold yellow'
+
+# 电池电量低于 100%
+[[battery.display]]
+threshold = 100
+style = 'bold green'
+
+# 时间组件展示
+[time]
+disabled = true
+format = '[$time ](bold blue)'
+
+# 展示 IP，启用后可能会导致 `ssh` 卡死
+# [localip]
+# ssh_only = false
+# format = '@[$localipv4](bold red) '
+# disabled = false
+
+# 禁用 'package' 组件，将其隐藏
+[package]
+disabled = true
